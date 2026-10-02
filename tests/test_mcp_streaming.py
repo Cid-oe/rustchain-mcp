@@ -1,9 +1,8 @@
-import pytest
 from unittest.mock import patch, MagicMock
 from httpx import Response
 import time
 
-from rustchain_mcp.server import mcp, get_client, RUSTCHAIN_NODE
+from rustchain_mcp.server import mcp, get_client
 
 def test_server_capabilities():
     """Check the exact MCP capabilities the server advertises."""
